@@ -1,0 +1,31 @@
+### Traer todas las criaturas
+GET http://localhost:3000/criaturas
+
+### 2. Probar GET /criaturas/:id — Traer una sola criatura (BONUS)
+GET http://localhost:3000/criaturas/3
+Content-Type: application/json
+
+### Crear una nueva criatura
+POST http://localhost:3000/criaturas
+Content-Type: application/json
+
+{
+  "nombre": "Voltix",
+  "tipo": "Eléctrico",
+  "poder": 52,
+  "capturada": false
+}
+
+### Actualizar una criatura
+PUT http://localhost:3000/criaturas/1
+Content-Type: application/json
+
+{
+  "nombre": "Emberdrake",
+  "tipo": "Fuego",
+  "poder": 90,
+  "capturada": true
+}
+
+### Eliminar una criatura
+DELETE http://localhost:3000/criaturas/2
